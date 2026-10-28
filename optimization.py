@@ -102,7 +102,7 @@ for model_dict in models:
         n_iter=10,          # no. of iterations
         cv=5,               # Cross-validation folds => we split the data into folds (5) ,
                             # train it with 4 and test it with the remainig one, then we take the average of 5 folds
-        scoring='accuracy',      
+        scoring='f1',      
         random_state=42,
         n_jobs=-1
     )
